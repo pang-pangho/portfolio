@@ -31,6 +31,7 @@
 }
 @font-face {
   font-family: "SBAggroB";
+
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
     format("woff");
   font-weight: normal;
@@ -53,16 +54,63 @@
 
 .container {
   background-color: #f5f7f8;
-  height: 1024px;
+  height: 100vh; /* 화면 높이의 100%로 조정 */
   position: relative;
 }
+.container2 {
+  background-color: #f3d7ca;
+  height: 100vh; /* 화면 높이의 100%로 조정 */
+  position: relative;
+}
+.skillBox1 {
+  position: absolute;
+  left: 40px;
+  top: 160px;
+  border-radius: 70%;
+}
+
+.skill {
+  border-radius: 10%;
+  transition: transform 0.8s ease;
+}
+.skillBox2 {
+  position: absolute;
+  left: 840px;
+  top: 160px;
+
+  border-radius: 70%;
+}
+
+.skill2 {
+  border-radius: 10%;
+  width: 270px;
+  transition: transform 0.8s ease;
+}
+.skill2:hover {
+  transform: translatey(-20px);
+}
+.skillTitle2 {
+  position: absolute;
+  top: -40px;
+  left: 70px;
+  font-family: "SBAggroB";
+}
+.skill:hover {
+  transform: translateY(-20px);
+}
+.skillTitle {
+  position: absolute;
+  top: -40px;
+  left: 230px;
+  font-family: "SBAggroB";
+}
 .aboutme-package {
-  height: 100px;
-  width: 500px;
+  height: 20%; /* 화면 높이의 20%로 조정 */
+  width: 70%; /* 화면 너비의 70%로 조정 */
   text-align: left;
   position: absolute;
-  top: 150px;
-  left: 240px;
+  top: 15%; /* 화면 높이의 15%로 조정 */
+  left: 10%; /* 화면 너비의 15%로 조정 */
 }
 
 .value {

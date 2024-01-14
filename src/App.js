@@ -8,7 +8,9 @@ import Profile from "./profile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-
+import TypingAnimation2 from "./typing2";
+import Current from "./SKILLS.png";
+import Upcoming from "./Upcoming.png";
 let options = {
   anchors: ["sectionOne", "sectionTwo", "sectionThree"],
 };
@@ -20,7 +22,9 @@ function App() {
         <Section>
           <Page1 />
         </Section>
-        <Section>page 2</Section>
+        <Section>
+          <Page2 />
+        </Section>
         <Section>Page 3</Section>
       </SectionsContainer>
     </div>
@@ -43,4 +47,23 @@ function Page1() {
   );
 }
 
+function Page2() {
+  return (
+    <div className="container2">
+      <div className={`content`}>
+        <div className="spread-underline">
+          <TypingAnimation2 />
+        </div>
+      </div>
+      <div className="skillBox1">
+        <img src={Current} className="skill"></img>
+        <div className="skillTitle">Current Skills</div>
+      </div>
+      <div className="skillBox2">
+        <img src={Upcoming} className="skill2"></img>
+        <div className="skillTitle2">Upcoming Skills</div>
+      </div>
+    </div>
+  );
+}
 export default App;
