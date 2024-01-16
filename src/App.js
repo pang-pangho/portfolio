@@ -11,6 +11,8 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import TypingAnimation2 from "./typing2";
 import Current from "./SKILLS.png";
 import Upcoming from "./Upcoming.png";
+import SimpleSlider from "./SimpleSlider";
+import TypingAnimation3 from "./TypingAnimation3";
 let options = {
   anchors: ["sectionOne", "sectionTwo", "sectionThree"],
 };
@@ -25,14 +27,16 @@ function App() {
         <Section>
           <Page2 />
         </Section>
-        <Section>Page 3</Section>
+        <Section>
+          <Page3 />
+        </Section>
       </SectionsContainer>
     </div>
   );
 }
 function Page1() {
   return (
-    <div className="container">
+    <div className="container1">
       <div className={`content`}>
         <div className="spread-underline">
           <TypingAnimation />
@@ -62,6 +66,19 @@ function Page2() {
       <div className="skillBox2">
         <img src={Upcoming} className="skill2"></img>
         <div className="skillTitle2">Upcoming Skills</div>
+      </div>
+    </div>
+  );
+}
+
+function Page3() {
+  return (
+    <div>
+      <div className="container3">
+        <div className="spread-underline">
+          <TypingAnimation3 />
+        </div>
+        <SimpleSlider />
       </div>
     </div>
   );

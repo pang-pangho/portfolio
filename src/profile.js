@@ -1,4 +1,3 @@
-// profile.js
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,11 +9,12 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
+
 function Profile() {
   return (
     <div
-      className="animate__animated animate__slideInLeft"
-      style={{ animationDelay: "2s" }}
+      className="animate__animated animate__fadeInDown"
+      style={{ animationDelay: "2.5s" }}
     >
       <div className="aboutme-package">
         <div className="name">
