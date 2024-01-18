@@ -13,6 +13,9 @@ import Current from "./SKILLS.png";
 import Upcoming from "./Upcoming.png";
 import SimpleSlider from "./SimpleSlider";
 import TypingAnimation3 from "./TypingAnimation3";
+import insta from "./instagram.png";
+import github from "./git-hub.png";
+import kakaotalk from "./kakao-talk.png";
 let options = {
   anchors: ["sectionOne", "sectionTwo", "sectionThree"],
 };

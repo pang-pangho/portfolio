@@ -9,7 +9,10 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-
+import insta from "./instagram.png";
+import github from "./git-hub.png";
+import kakaotalk from "./kakao-talk.png";
+import "./App.css";
 function Profile() {
   return (
     <div
@@ -51,6 +54,32 @@ function Profile() {
           <FontAwesomeIcon icon={faGraduationCap} /> 　학력
           <div className="value">한림대학교(재학중)</div>
         </div>
+      </div>
+      <div className="contact_container">
+        <img
+          src={insta}
+          className="contact_img"
+          onClick={() => {
+            window.open("https://www.instagram.com/sensy.wear/", "_blank");
+          }}
+          alt="Instagram"
+        />
+        <img
+          src={kakaotalk}
+          className="contact_img"
+          onClick={() => {
+            window.open("https://open.kakao.com/o/szm5Uv4f", "_blank");
+          }}
+          alt="KakaoTalk"
+        />
+        <img
+          src={github}
+          className="contact_img"
+          onClick={() => {
+            window.open("https://github.com/pang-pangho", "_blank");
+          }}
+          alt="GitHub"
+        />
       </div>
     </div>
   );
