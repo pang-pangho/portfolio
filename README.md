@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# 프로젝트 제목: REACT를 활용한 포트폴리오 사이트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 주요 라이브러리
 
-## Available Scripts
+1. **`react-fullpage`**: 페이지 섹션을 구성하기 위한 라이브러리로 사용.
+   - [GitHub Repo](https://github.com/subtirelum/react-fullpage)
 
-In the project directory, you can run:
+2. **`react-slick`**: 이미지 및 비디오 슬라이드를 쉽게 구현하기 위해 사용.
+   - [GitHub Repo](https://github.com/akiran/react-slick)
 
-### `npm start`
+3. **`react-bootstrap`**: 프로젝트 슬라이드에서 사용된 버튼 컴포넌트를 스타일링하기 위한 Bootstrap 컴포넌트 라이브러리.
+   - [GitHub Repo](https://github.com/react-bootstrap/react-bootstrap)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **`FontAwesome`**: 아이콘을 삽입하기 위한 라이브러리로 Free Regular 및 Solid 아이콘을 사용.
+   - [GitHub Repo](https://github.com/FortAwesome/react-fontawesome)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **`animate.css`**: 프로필 부분의 애니메이션 효과를 추가하기 위해 사용.
+   - [GitHub Repo](https://github.com/animate-css/animate.css)
 
-### `npm test`
+## 프로젝트 소개
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+이 프로젝트는 React를 사용하여 제작한 개인 포트폴리오 웹 사이트입니다. 주요 기능으로는 페이지 섹션별로 나뉜 컴포넌트들을 효과적으로 표현하는 것이 있습니다.
 
-### `npm run build`
+### 페이지 구성
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **첫 번째 페이지 (Page1)**
+   - 사용자 이름, 생년월일, 주소, 연락처, 이메일, 학력 등의 정보를 보여주는 프로필 섹션.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **두 번째 페이지 (Page2)**
+   - 사용자의 스킬셋을 시각적으로 표현하는 섹션으로 현재 보유한 기술과 향후 습득할 기술을 구분하여 나타냅니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **세 번째 페이지 (Page3)**
+   - 프로젝트 슬라이드로, React를 사용하여 제작한 프로젝트들을 간략하게 소개하는 부분입니다. 각 프로젝트는 비디오 또는 이미지로 표현되며, 제목과 간단한 설명이 함께 제공됩니다.
 
-### `npm run eject`
+## 주요 기능 및 구현 내용
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **타이핑 애니메이션 (`TypingAnimation`)**
+   - 페이지 로딩 시 ABOUT ME 텍스트를 타이핑하는 효과를 구현하여 사용자에게 시각적인 흥미를 유발합니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **프로필 컴포넌트 (`Profile`)**
+   - FontAwesome 아이콘 및 연락처 이미지를 통해 사용자의 정보를 시각적으로 제공합니다. 또한, 각 아이콘을 클릭하면 해당 SNS나 이메일로 바로 이동할 수 있도록 구현되어 있습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **프로젝트 슬라이드 (`SimpleSlider`)**
+   - `react-slick` 라이브러리를 활용하여 프로젝트를 슬라이드로 표현하며, 사용자가 각 프로젝트를 클릭하면 상세 정보를 확인할 수 있는 버튼이 제공됩니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **프로젝트 슬라이드 컴포넌트 (`ProjectSlide`)**
+   - 각각의 프로젝트를 나타내는 컴포넌트로, 제목, 설명, GitHub 링크, 그리고 비디오(또는 이미지)가 포함되어 있습니다. 비디오는 클릭 시 확대/축소되는 기능이 제공됩니다.
 
-## Learn More
+## 프로젝트 실행 방법
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://pangtfolio.netlify.app/
