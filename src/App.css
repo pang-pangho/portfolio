@@ -76,40 +76,57 @@
   position: absolute;
   left: 40px;
   top: 260px;
-  border-radius: 70%;
+  height: 650px;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.skillIcon {
+  position: relative;
+  left: 7%;
+  margin-top: 7%;
+  height: 150px;
+  width: 150px;
+  display: inline-flex;
+  margin-right: 100px;
+  transition-duration: 0.3s;
+}
+.skillIcon:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 0.5s;
+}
+.line {
+  position: absolute;
+  top: 30%;
+}
+.third {
+  position: absolute;
+  top: 60%;
+}
+.GreyBox {
+  border-style: solid;
+  border-color: #eeeeee;
+  border-radius: 1rem;
+}
+.stackIcon {
+  width: 70%;
+  height: 70%;
+  margin: 20px;
 }
 
-.skill {
-  border-radius: 10%;
-  height: 500px;
-  position: absolute;
-  top: 30px;
-  transition: transform 0.8s ease;
-}
 .skillBox2 {
   position: absolute;
-  left: 1440px;
-  top: 260px;
-
-  border-radius: 70%;
-}
-
-.skill2 {
-  border-radius: 10%;
-  width: 270px;
-  position: absolute;
-  top: 30px;
-  transition: transform 0.8s ease;
-}
-.skill2:hover {
-  transform: translatey(-20px);
+  left: 50%;
+  top: 28%;
+  height: 30%;
+  border-radius: 1rem;
+  background-color: #fff;
 }
 .skillTitle2 {
   position: absolute;
-  font-size: 50px;
+  top: -26%;
+  left: 15%;
   width: 500px;
-  top: -55px;
-  left: -90px;
+  font-size: 50px;
   font-family: "SBAggroB";
 }
 .skill:hover {
@@ -117,8 +134,8 @@
 }
 .skillTitle {
   position: absolute;
-  top: -55px;
-  left: 180px;
+  top: -10%;
+  left: 15%;
   width: 500px;
   font-size: 50px;
   font-family: "SBAggroB";

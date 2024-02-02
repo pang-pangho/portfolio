@@ -60,7 +60,7 @@ function Profile() {
           src={insta}
           className="contact_img"
           onClick={() => {
-            window.open("https://www.instagram.com/sensy.wear/", "_blank");
+            window.open("https://www.instagram.com/pangho.a/", "_blank");
           }}
           alt="Instagram"
         />
